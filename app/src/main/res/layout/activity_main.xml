@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:id="@+id/Nom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/textStyle"
+            android:text="@string/nome" />
+
+        <EditText
+            android:id="@+id/editNom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20sp"
+            android:inputType="text"
+            android:textColor="@color/gris"
+            android:text="@string/tnom" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/textStyle"
+            android:text="Email : " />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20sp"
+            android:inputType="text"
+            android:textColor="@color/gris"
+            android:text="email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enregistrer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:insetLeft="10dp"
+                android:insetRight="10dp"
+                android:onClick="save"
+                android:text="@string/enregistrer" />
+
+            <Button
+                android:id="@+id/charger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:insetRight="10dp"
+                android:onClick="get"
+                android:text="@string/charger" />
+
+            <Button
+                android:id="@+id/effacer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:insetRight="10dp"
+                android:onClick="clear"
+                android:text="@string/effacer" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

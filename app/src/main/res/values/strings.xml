@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="nome">Nom :</string>
+    <string name="effacer">Effacer</string>
+    <string name="charger">Charger</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="tnom">nom</string>
+</resources>
